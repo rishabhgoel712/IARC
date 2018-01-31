@@ -27,6 +27,10 @@ void setup()
   delay(500);
   Serial.begin(9600); // set the data rate in bits per second for serial data transmission
   delay(1000);
+  pinMode(22,OUTPUT);
+  pinMode(24,OUTPUT);
+  pinMode(26,OUTPUT);
+  pinMode(28,OUTPUT);
 }
 
 
@@ -43,6 +47,11 @@ void loop()
     Serial.print('\t'); // tab to format the raw data into columns in the Serial monitor
   }
   Serial.println();
+  
+  digitalWrite(22,HIGH);
+  digitalWrite(24,LOW);
+  digitalWrite(28,HIGH);
+  digitalWrite(26,LOW);
   
   delay(250);
 }
