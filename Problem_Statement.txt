@@ -1,0 +1,13 @@
+1. You shall place your bot at point A in any direction, in order to perform line following.
+2. After reaching the point B by line following it then has to travel to another point C by following a path, bounded by a continuous wall on one side and a line running parallel to the wall on the other side at a distance of 400mm, by the principles of the wall following. In case the bot crosses the line, human intervention would be allowed and points would be cut for the same.
+3. After reaching point C, the bot has to follow a continuous wall again, according to the same rules as mentioned above, but this time, the wall will be in the opposite direction as that of the previous one. It would then reach point D.
+4. After reaching D it must again traverse on black lines.
+5. At each intersection IA, the bot has to detect the color of the block placed in front and has to turn as described below to reach point IB:
+	i. Blue Block: The bot has to turn left at intersection IA.
+	ii. Red Block: The bot has to turn right at intersection IA.
+6. Following the above directions, the bot would reach the Finish area. There it has to show the number of boxes encountered on an LCD display, as well as has to blink a LED which will mark the end of the game.
+
+NOTE:
+
+1. The dimension of blocks, as well as the number of IA-IB intersections after point D, will be disclosed on-site.
+2. The sequence of colors of blocks will be chosen at random during the event.
